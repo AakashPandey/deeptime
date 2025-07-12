@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DeepTime",
   "version": "1.0",
-  "description": "Block or allow specific websites with time-based filtering.",
+  "description": "Open-source extension to block distracting websites and help you focus.",
   "permissions": [
     "declarativeNetRequest",
     "declarativeNetRequestWithHostAccess",
@@ -17,13 +17,13 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "DeepTime - Focus & Productivity"
+    "default_title": "DeepTime - Focus on what matters now"
   },
   "icons": {
-    "16": "./assets/icon16.png",
-    "32": "./assets/icon32.png",
-    "48": "./assets/icon48.png",
-    "128": "./assets/icon128.png"
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
   },
   "web_accessible_resources": [
     {
