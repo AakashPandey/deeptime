@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This site can't be reached</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #202124;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: -40px;
+            padding: 0px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #181a1b;
+                color: #f3f3f3;
+            }
+            .tip {
+                background: #23272a !important;
+                border: 1px solid #333 !important;
+                color: #b0b0b0;
+            }
+            .url, .error-message {
+                color: #b0b0b0;
+            }
+            .error-icon {
+                filter: invert(0.8) grayscale(1);
+            }
+        }
+
+        .error-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="%235f6368" stroke-width="3"/><path d="M35 35l30 30M35 65l30-30" stroke="%235f6368" stroke-width="3" stroke-linecap="round"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .url {
+            font-size: 16px;
+            color: #5f6368;
+            margin-bottom: 24px;
+            font-family: monospace;
+        }
+
+        .error-message {
+            font-size: 16px;
+            margin-bottom: 32px;
+            color: #5f6368;
+        }
+
+        .tip {
+            background: #f8f9fa;
+            border: 1px solid #e8eaed;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+            font-style: italic;
+            color: #5f6368;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="error-icon"></div>
+    <h1 id="blockedTitle">This site can't be reached</h1>
+    <div class="url" id="blockedUrl"></div>
+    <div class="error-message"><strong>DeepTime</strong> expectedly closed the connection.</div>
+    <div class="tip">Pro Tip: Your productivity doesn't actually depend on checking this site every 30 seconds.</div>
+    <div style="color: #5f6368; font-size: 12px; font-family: monospace;">ERR_DEEPTIME_FOCUS_SESSION_ACTIVE</div>
+</body>
+
+<script src="blocked.js"></script>
+
+</html>

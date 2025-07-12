@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="assets/icon128.png" alt="DeepTime" class="logo" />
+        <div class="title">DeepTime</div>
+        <div class="subtitle">Focus on what matters now</div>
+        <div class="clock-row">
+            <div id="productivityClock" class="clock">00:00:00</div>
+            <button id="toggleFocus" class="focus-btn">
+                <span id="focusIcon" class="focus-icon">
+                    <div id="playSvgd" class="icon-bg play-bg">
+                        <svg id="playSvg" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="6,4 20,12 6,20" fill="#333" />
+                        </svg>
+                    </div>
+                    <div id="pauseSvgd" class="icon-bg pause-bg">
+                        <svg id="pauseSvg" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="4" width="4" height="16" fill="#333" />
+                            <rect x="14" y="4" width="4" height="16" fill="#333" />
+                        </svg>
+                    </div>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="section">
+        <div>
+            <div id="modeLabel" class="mode-label">Blocklist</div>
+            <div id="modeDesc" class="mode-desc">Block a list of websites</div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <ul id="siteList" class="site-list"></ul>
+    <div class="wrap input-wrap">
+        <div class="input-row">
+            <input type="text" id="siteInput" class="site-input" placeholder="Eg. https://youtube.com">
+            <button id="addSite" class="add-btn">Add</button>
+        </div>
+        <button id="addCurrentSite" class="add-current-btn">Add Current Site</button>
+    </div>
+
+    </div>
+
+
+</body>
+<script src="popup.js"></script>
+</html>
